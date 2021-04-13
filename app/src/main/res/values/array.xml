@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="menu_device">
+        <item>Фонарик</item>
+        <item>Микрофон/Динамик</item>
+        <item>Камера</item>
+        <item>Акселерометр</item>
+        <item>Экран</item>
+        <item>Вибрация</item>
+        <item>Кнопки</item>
+        <item>Bluetooth</item>
+        <item>Аккаунт</item>
+    </string-array>
+</resources>

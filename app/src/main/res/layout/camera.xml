@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cam_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <ImageButton
+        android:id="@+id/back2"
+        android:layout_width="50dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        android:onClick="onBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
+
+    <Button
+        android:id="@+id/camStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startCamera"
+        android:text="Начать тест камеры"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.859" />
+
+    <ImageView
+        android:id="@+id/camImg"
+        android:layout_width="265dp"
+        android:layout_height="229dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/ic_baseline_camera_24"
+        app:layout_constraintBottom_toTopOf="@+id/camStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GreetingCam"
+        app:layout_constraintVertical_bias="0.13"
+        app:srcCompat="@drawable/ic_baseline_camera_24"
+        tools:srcCompat="@drawable/ic_baseline_camera_24" />
+
+    <TextView
+        android:id="@+id/GreetingCam"
+        android:layout_width="199dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:text="Проверьте камеру"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/startFrontCam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startFrontCamera"
+        android:text="Начать тест фронтальной камеры"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camStart"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <ImageView
+        android:id="@+id/frontCamImg"
+        android:layout_width="289dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toTopOf="@+id/camStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/camImg"
+        app:srcCompat="@drawable/ic_baseline_camera_front_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
